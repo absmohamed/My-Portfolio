@@ -38,6 +38,7 @@
 }
 
 #topnav {
+  background-color: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
@@ -50,5 +51,10 @@
   background: -webkit-gradient(linear, right top, left top, from(#4c4c4c), color-stop(12%, #595959), color-stop(25%, #666666), color-stop(39%, #474747), color-stop(50%, #2c2c2c), color-stop(51%, black), color-stop(60%, #111111), color-stop(76%, #2b2b2b), color-stop(91%, #1c1c1c), to(#131313));
   background: linear-gradient(to left, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, black 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
   color: white;
+}
+
+#contact-details img {
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
