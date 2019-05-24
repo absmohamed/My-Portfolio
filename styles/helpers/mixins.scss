@@ -1,0 +1,10 @@
+@mixin font-settings($color: $primary-font-color, $family: $primary-font-family) {
+    color: $color;
+    font-family: $family;
+}
+
+@mixin big {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}

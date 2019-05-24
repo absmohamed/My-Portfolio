@@ -3,49 +3,87 @@
     padding: 0;
 }
 
-#home {
+#container {
     background: url("../../images/Portfolio-pic.png") center/cover no-repeat;
     height: 100vh;
     color: $primary-font-color;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "intro" 
-    "empty-space"
-    "about-me";    
+    grid-template-rows: .5fr 5fr 3fr 1fr;
+    grid-template-areas: 
+    "topnav"
+    "home"
+    "end-area"
+    "contact";    
+    padding: .5em;
+    @include font-settings();
+    @include big {
+        font-size: 1.25em;
+    }
 }
+
+#home {
+   grid-area: home;
+    
+}
+
+.nav-links{
+  @include font-settings(); 
+  
+}
+.nav-links:active{
+    color: white;
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+    padding: .25em;
+}
+
+#empty-space {
+    grid-area: empty-space;
+}
+
 
 #intro {
     grid-area: intro;
-    padding-top: 20px;
+    // padding-top: 20px;
     font-size: 30px;
     align-items: center;
 }
 
 #about-me{
     grid-area: about-me;
-    padding-top: 100px;
+    padding-top: 60px;
     align-items: baseline;
 }
+
 #topnav{
     background-color: black;
-    color: $primary-font-color
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-auto-columns: repeat(4 1fr);
-    grid-template-areas: "link link link link"
+    height: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-area: topnav;
 }
 
 
 #end{
-    background: linear-gradient(to left, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
     color: $primary-font-color;
+    padding: .5em;
+    grid-area: end-area;
 }
 
 
-#contact-details {
-    img {
-        width: 50px;
-        height: 50px;
-    }
+.notes-app {
+    width: 300px;
+    height: auto;
+    padding: 1.25em;
+
+}
+
+#contact {
+    grid-area: contact;
+    align-self: end;
 }
