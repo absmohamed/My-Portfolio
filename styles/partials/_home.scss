@@ -3,22 +3,28 @@
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
 #container {
     background: url("../../images/Portfolio-pic.png") center/cover no-repeat;
-    height: 100vh;
+    height: 100%;
     color: $primary-font-color;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .5fr 5fr 3fr 1fr;
+    grid-template-rows: .5fr 3fr 4fr 1fr;
     grid-template-areas: 
     "topnav"
     "home"
     "end-area"
     "contact";    
-    padding: .5em;
+    padding: 1em;
     @include font-settings();
     @include big {
         font-size: 1.25em;
+        padding: 1em;
+        grid-template-rows: .5fr 2fr 4fr .5fr;
     }
 }
 
@@ -55,8 +61,16 @@
 
 #about-me{
     grid-area: about-me;
-    padding-top: 60px;
+    padding-top: 4em;
     align-items: baseline;
+}
+
+#About-Me-header{
+    font-size: 1.5em;
+}
+
+#Projects-header{
+    font-size: 20px;
 }
 
 #topnav{
@@ -66,20 +80,39 @@
     flex-wrap: wrap;
     justify-content: space-around;
     grid-area: topnav;
+    a:link {
+        text-decoration: none;
+      }
+      
+      a:visited {
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      
+      a:active {
+        text-decoration: underline;
+      }
 }
 
 
 #end{
     color: $primary-font-color;
-    padding: .5em;
     grid-area: end-area;
+    padding-top: 1em;
 }
 
 
 .notes-app {
-    width: 300px;
+    width: 100%;
     height: auto;
-    padding: 1.25em;
+    padding-top: 1.25em;
+    @include big { 
+        // height: 300px;
+        // width: 500px;
+    }
 
 }
 
