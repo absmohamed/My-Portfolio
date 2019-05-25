@@ -18,7 +18,7 @@ The purpose of this assessment was to create a Portfolio website so that we can 
 - There is a screenshot of one of my completed projects, if you click on that screenshot, it will send you to its github repository.
 - Underneath the screenshot, my Twitter and Linkedin accounts are displayed with their logos. If you click on the logos, it shall take you directly to my twitter and linkedin accounts.
 -The website format stays consistent when you view it on a variety of devices.
-### Sitemap:
+
 ### Screenshots:
 Here are screenshots of my portfolio website on laptop mode: 
 ![laptop](docs/laptop1.png)
@@ -46,7 +46,6 @@ Github is a web-based hosting service for software development projects.
 
 
 ## Design documentation including, Design process:
-### Wireframes:
 
 ### Details of planning process including, Project plan & timeline Screenshots of Trello board(s):
 Here is my original portfolio design: 
@@ -56,6 +55,15 @@ It's similar to my final portfolio however there are major differences such as m
 
 Here is my Project plan & Timeline:
 ![design](docs/design2.jpg)
+
+
+Here is a link to my Trello board:
+https://trello.com/b/RP2Kj7Te/portfolio
+
+Here are screenshots of the Trello board:
+![Trello](docs/Trello1.png)
+![Trello](docs/Trello2.png)
+![Trello](docs/Trello3.png)
 
 ## Short Answer Q&A
 ### Describe key events in the development of the internet from the 1980s to today (max. 150 words)
